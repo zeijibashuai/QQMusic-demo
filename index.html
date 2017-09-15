@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>KS</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        (function () {
+            computedFont();
+            window.addEventListener('resize', computedFont, false);
+            function computedFont() {
+                var deviceW = document.documentElement.clientWidth;
+                if (deviceW > 640) return;
+                document.documentElement.style.fontSize = deviceW / 640 * 100 + 'px';
+            }
+        })();
+    </script>
+</head>
+<body>
+<section class="container">
+    <div id="uio">
+        正在加载音频~
+    </div>
+    <audio src="mymucis/C400004H7iKt1VFmgr.m4a" preload="none" id="musicAudio"></audio>
+    <div class="backgroundImg"></div>
+    <div class="background"></div>
+    <header class="header">
+        <div class="content">
+            <img src="img/myDream.jpg" alt="">
+            <h2>
+                <span>盲点</span>
+                <span>GEM.邓紫棋 - 凯神</span>
+            </h2>
+        </div>
+        <a href="javascript:;" class="musicBtn"></a>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="progress">
+            <span class="current">00:00</span>
+            <span class="duration">00:00</span>
+            <div class="proBg">
+                <div class="already"></div>
+            </div>
+        </div>
+        <a href="https://user.qzone.qq.com/1501561987/" class="down">&#160&#160&#160你说去哪 就去哪</a>
+    </footer>
+</section>
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
