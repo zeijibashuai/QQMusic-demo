@@ -57,7 +57,7 @@ var zizhixing=(function () {
 
         // 开始播放，仅此而已
         $Fn.add(function () {
-            musicAudio.play();
+            //musicAudio.play();
             musicAudio.addEventListener("canplay",function () {  //指定播放，准备好了马上播放前
                 uio.style.display="none";
                 musicBtn.style.display="block";
